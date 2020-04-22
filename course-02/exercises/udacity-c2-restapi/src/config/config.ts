@@ -8,6 +8,9 @@ export const config = {
     aws_region: process.env.AWS_REGION,
     aws_profile: process.env.AWS_PROFILE,
     aws_media_bucket: process.env.AWS_MEDIA_BUCKET,
+    jwt: {
+      secret: process.env.JWT_SECRET,
+    },
   },
   prod: {
     username: "",
@@ -17,12 +20,3 @@ export const config = {
     dialect: "postgres",
   },
 };
-
-// export POSTGRES_USERNAME=udagramdbdev;
-// export POSTGRES_PASSWORD=U3yZAsz2iVnvP5LyXpzy;
-// export POSTGRES_DATABASE=udagramdbdev;
-// export POSTGRES_HOST=udagramdbdev.chbi1lil3hyi.eu-west-2.rds.amazonaws.com;
-// export POSTGRES_DIALECT=postgres;
-// export AWS_REGION=eu-west-2;
-// export AWS_PROFILE=udagramdbdev;
-// export AWS_MEDIA_BUCKET=udagram-sdb-dev;
