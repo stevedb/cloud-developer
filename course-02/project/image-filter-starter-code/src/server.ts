@@ -42,7 +42,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
           });
         },
         message => {
-          return res.status(400).send(message);
+          return res.status(422).send(message);
         }
       )
       .catch(
